@@ -16,6 +16,8 @@ iterate (*2) 1 -- infinite [1,2,4....]
 take 3 [1,2,3,4] -- [1,2,3]
 drop 3 [1,2,3,4] -- [4]
 splitAt 3 [1,2,3,4,5] -- ([1,2,3],[4,5])
+takeWhile odd [1, 3, 5, 6, 8] -- Output: [1, 3, 5]
+dropWhile 
 
 head [1,2,3] -- 1
 tail [1,2,3] -- [2,3]
@@ -145,5 +147,12 @@ combined = square . add3 -- compose functions together
 combined 3 -- 36
 
 `mod` -- %
+/= -- !=
+`div` -- //
 
+toUpper
+toLower
+
+op = (+) -- assign + to op
+op 3 2 -- 5
 ```
