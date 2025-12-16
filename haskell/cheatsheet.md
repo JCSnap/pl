@@ -18,6 +18,7 @@ drop 3 [1,2,3,4] -- [4]
 splitAt 3 [1,2,3,4,5] -- ([1,2,3],[4,5])
 takeWhile odd [1, 3, 5, 6, 8] -- Output: [1, 3, 5]
 dropWhile 
+delete 2 [1,2,3,2]-- [1,3,2]
 
 head [1,2,3] -- 1
 tail [1,2,3] -- [2,3]
@@ -155,4 +156,17 @@ toLower
 
 op = (+) -- assign + to op
 op 3 2 -- 5
+
+isAlphaNum
+even
+odd
+
+lines "123\n456" -- ["123", "456"] 
+words "hello world" -- ["hello", "world"]
+unwords ["hello", "world"] - "hello world"
+
+narcissistic n = n == (sum $ map (^m) digits) 
+    where digits = map (\x -> read [x] :: Integer) $ show n
+          m = length digits
+-- where, define variables after the main expression
 ```
