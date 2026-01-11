@@ -286,3 +286,12 @@ done
 
 ---
 
+### 17) Debugging
+```ocaml
+- let inc x =
+      let () = print_int x in (* adding print *)
+      x + 1
+      
+let rec fib x = if x <= 1 then 1 else fib (x - 1) + fib (x - 2);;
+#trace fib;; (* add #trace to see trace of recursive call*)
+```
