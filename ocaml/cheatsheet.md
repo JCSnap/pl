@@ -295,3 +295,12 @@ done
 let rec fib x = if x <= 1 then 1 else fib (x - 1) + fib (x - 2);;
 #trace fib;; (* add #trace to see trace of recursive call*)
 ```
+
+### 18) Haskell equivalent
+```ocaml
+result = f . g . h $ x (* haskell *)
+let result = x |> h |> g |> f (* ocaml *)
+
+print $ length $ filter even xs (* haskell *)
+print @@ List.length @@ List.filter even xs (* ocaml *)
+```
